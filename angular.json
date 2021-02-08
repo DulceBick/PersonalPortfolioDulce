@@ -32,8 +32,15 @@
                         ],
                         "styles": [
                             "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                            "src/styles.scss"
+                            "node_modules/font-awesome/css/font-awesome.css",
+                            "src/styles.scss",
+                            "src/app/shared/fonts.scss"
                         ],
+                        "stylePreprocessorOptions": {
+                            "includePaths": [
+                                "src/app/shared"
+                            ]
+                        },
                         "scripts": [
 
                             "node_modules/jquery/dist/jquery.min.js",

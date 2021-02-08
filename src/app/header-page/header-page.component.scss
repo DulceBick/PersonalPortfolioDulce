@@ -1,0 +1,21 @@
+@import 'colors';
+.nav-color {
+    background-color: rgba(58, 2, 2, 0.918);
+    height: 70px;
+    line-height: 55px;
+    // box-shadow: 0px 10px 20px 9px #f101cc;
+}
+
+.nav-color a {
+    color: $nav-font-color;
+    font-family: $nav-font-family;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.iconNav {
+    color: white;
+    position: absolute;
+    padding-left: 2em;
+    padding-top: 10px;
+}
