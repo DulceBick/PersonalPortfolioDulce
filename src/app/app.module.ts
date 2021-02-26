@@ -7,18 +7,22 @@ import { HeaderPageComponent } from './header-page/header-page.component';
 import { FontAwesomeModule }  from '@fortawesome/angular-fontawesome';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
+import { WeatherApiComponent } from './weather-api/weather-api.component';
+import { ParticlesModule } from 'angular-particle';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderPageComponent,
     HomePageComponent,
-    FooterPageComponent
+    FooterPageComponent,
+    WeatherApiComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

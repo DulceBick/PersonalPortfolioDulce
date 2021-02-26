@@ -19,13 +19,15 @@ export class HeaderPageComponent implements OnInit {
   project:Boolean;
   brand:Boolean;
   hobbie:Boolean;
+  text:String;
  
   constructor() { 
-    this.home=true;
-    this.aboutMe=false;
-    this.project=false;
-    this.brand=false;
-    this.hobbie=false;
+    this.home = true;
+    this.aboutMe = false;
+    this.project = false;
+    this.brand = false;
+    this.hobbie = false;
+    this.text = "Sweet Home";
 
   }
 
@@ -35,20 +37,25 @@ export class HeaderPageComponent implements OnInit {
   
   homeButton(){
     this.iconMenu = faGem;
+    this.text="Sweet Home";
   }
 
   aboutMeButton(){
-    this.iconMenu = faCrown;
+    this.iconMenu = faCrown; 
+    this.text="I'm a good person";
   }
   myProjectsButton(){
     this.iconMenu = faBomb;
+    this.text="Yeah, let's see";
   }
   myBrandButton(){
     this.iconMenu = faBookDead;
+    this.text="Follow me ";
   }
 
   myHobbiesButton(){
     this.iconMenu = faDragon;
+    this.text="You need to try it";
 
   }
 
