@@ -16,12 +16,14 @@ export class HomePageComponent implements OnInit {
       'position': 'fixed',
       'width': '100%',
       'height': '100%',
-      'z-index': -1,
+      'z-index': 1,
       'top': 0,
       'left': 0,
       'right': 0,
       'bottom': 0,
-  };
+ 
+ }
+
 
 this.myParams = {
       particles: {
@@ -29,7 +31,7 @@ this.myParams = {
               value: 100,
           },
           color: {
-              value: ["#F277C6", "#F101CC", "#1A01F1", "#E70909"]
+              value: ["#000000", "#EB119F","#FFFFFF"]
           },
           shape: {
               type: 'triangle',

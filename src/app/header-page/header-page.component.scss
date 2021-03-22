@@ -1,19 +1,26 @@
-@import 'colors';
+@import "colors";
 .nav-color {
-    background-color: $nav-main-background;
-    height: 70px;
-    line-height: 55px;
-    position: fixed;
-    width: 100%;
-    // box-shadow: 0px 10px 20px 9px #f101cc; if you want to use a shadow bellow to the nav this is the option
+    background-color: transparent;
+}
+
+.nav-scroll {
+    background-color: $nav-background;
 }
 
 .nav-color a {
     color: $nav-font-color;
     font-family: $nav-font-family;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-color :hover {
+    color: #eb119f;
+}
+
+.icon_Text {
+    padding-bottom: 20px;
 }
 
 .iconNav {
@@ -21,4 +28,21 @@
     position: absolute;
     padding-left: 2em;
     padding-top: 10px;
+}
+
+.navbar-toggler {
+    color: $nav-font-color;
+}
+
+.navbar-toggler :hover {
+    color: #eb119f;
+}
+
+@media (max-width: 985px) {
+    .nav-color {
+        background-color: #eb119f;
+    }
+    .nav-color :hover {
+        color: $nav-background;
+    }
 }
