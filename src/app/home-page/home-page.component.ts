@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  myStyle: object = {};
-  myParams: object = {};
+  style: object = {};
+  params: object = {};
   width: number = 100;
   height: number = 100;
 
   ngOnInit(): void {
-    this.myStyle = {
+    this.style = {
       'position': 'fixed',
       'width': '100%',
       'height': '100%',
@@ -25,7 +25,7 @@ export class HomePageComponent implements OnInit {
  }
 
 
-this.myParams = {
+this.params = {
       particles: {
           number: {
               value: 100,
@@ -48,7 +48,6 @@ this.myParams = {
           },
   }
 };
-
 
      }
 
