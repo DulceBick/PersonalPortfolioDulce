@@ -30,11 +30,13 @@ img {
     .flex-container {
         flex-direction: column;
         align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     img {
         margin-bottom: 5%;
-        width: 76%;
+        width: 79%;
         border: 3px solid $sweetPink-color;
-        margin-left: 40px;
+        margin-left: 50px;
     }
 }

@@ -1,22 +1,24 @@
-<div class="nav-color fixed-top" [class.nav-scroll]="nav_flag">
-    <nav class="navbar  sticky-top navbar-expand-lg">
-        <div class="d-flex flex-row ">
-            <a class="navbar-brand" href="#">
-                <fa-icon [icon]="iconMenu" size="2x"> </fa-icon>
-                <a class="col icon_Text d-inline-block align-top">{{text}}</a>
-            </a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToogle" aria-controls="navbarToogle" aria-expanded="false" aria-label="Toggle navigation">
-            <fa-icon [icon]="iconMenuCollapse" size="2x"> </fa-icon>
-        </button>
-        <div class="collapse navbar-collapse   justify-content-end" id="navbarToogle">
-            <div class="navbar-nav  text-center">
-                <a class="nav-item nav-link" (click)="homeButton()" href="# ">Home</a>
-                <a class="nav-item nav-link" (click)="aboutMeButton()" href="# ">About Me</a>
-                <a class="nav-item nav-link" (click)="myProjectsButton()" href="# ">My projects</a>
-                <a class="nav-item nav-link" (click)="myBrandButton()" href="# ">My Brand</a>
-                <a class="nav-item nav-link" (click)="myHobbiesButton()" href="# ">My Hobbies</a>
+<div class="container">
+    <div class="nav-color fixed-top" [class.nav-scroll]="nav_flag">
+        <nav class="navbar  sticky-top navbar-expand-md">
+            <div class="d-flex flex-row ">
+                <a class="navbar-brand" href="#">
+                    <fa-icon [icon]="iconMenu" size="2x"> </fa-icon>
+                    <a class="col icon_Text d-inline-block align-top">{{text}}</a>
+                </a>
             </div>
-        </div>
-    </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToogle" aria-controls="navbarToogle" aria-expanded="false" aria-label="Toggle navigation">
+                <fa-icon [icon]="iconMenuCollapse" size="2x"> </fa-icon>
+            </button>
+            <div class="collapse navbar-collapse   justify-content-end" id="navbarToogle">
+                <div class="navbar-nav  text-center">
+                    <a class="nav-item nav-link" (click)="homeButton()" href="# ">Home</a>
+                    <a class="nav-item nav-link" (click)="aboutMeButton()" href="# ">About Me</a>
+                    <a class="nav-item nav-link" (click)="myProjectsButton()" href="# ">My projects</a>
+                    <a class="nav-item nav-link" (click)="myBrandButton()" href="# ">My Brand</a>
+                    <a class="nav-item nav-link" (click)="myHobbiesButton()" href="# ">My Hobbies</a>
+                </div>
+            </div>
+        </nav>
+    </div>
 </div>

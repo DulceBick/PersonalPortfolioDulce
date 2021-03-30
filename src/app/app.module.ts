@@ -10,6 +10,7 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
 import { WeatherApiComponent } from './weather-api/weather-api.component';
 import { ParticlesModule } from 'angular-particle';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { MyProjectsComponent } from './my-projects/my-projects.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HomePageComponent,
     FooterPageComponent,
     WeatherApiComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    MyProjectsComponent
   ],
   imports: [
     BrowserModule,
