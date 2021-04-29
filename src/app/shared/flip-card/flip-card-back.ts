@@ -1,0 +1,17 @@
+import {  Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'flip-card-back',
+    template: `
+    <div class="flip-card-back">
+     <ng-content></ng-content>
+   </div>
+   `,
+   styleUrls:['flip-card.component.scss']
+})
+
+export class FlipCardBackComponent  implements OnInit {
+    constructor() { }
+
+    ngOnInit() { }
+}

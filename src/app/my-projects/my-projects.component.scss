@@ -1,4 +1,13 @@
 @import 'colors';
+h1 {
+    color: white;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
+
 #container-cards {
     display: block;
     flex-direction: row;
@@ -10,73 +19,11 @@
     padding: 5%;
 }
 
-.iconimage {
-    margin: 5px;
-}
-
-.iconimage:hover {
-    background-color: $sweetPink-color;
-    cursor: pointer;
-}
-
-.card-header {
-    background-color: white;
-    box-shadow: -9px -14px $sweetPink-color;
-}
-
-.card-body {
-    padding: 0.25rem;
-}
-
 .card-img-top {
-    height: 90%;
+    height: 280px;
 }
 
 .card-text {
+    padding: 10px;
     text-align: justify;
-    padding: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.flip-container {
-    position: relative;
-    width: 250px;
-    height: 320px;
-}
-
-.flip-card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.5s ease;
-}
-
-.flip-card:hover {
-    transform: rotateY(180deg);
-    cursor: pointer;
-}
-
-.flip-card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: $sweetPink-color;
-    color: white;
-}
-
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: white;
-    color: black;
-    transform: rotateY(180deg);
-    border: 4px solid $sweetPink-color;
-}
-
-#arrows {
-    cursor: pointer;
 }

@@ -1,0 +1,28 @@
+<div class="container">
+    <h5 class="card-header" style="width: 18rem;">University Project</h5>
+    <div [ngClass]="toggleProperty ? 'flipped' : ''" class="card">
+        <div class="front">
+            <ng-content select="flip-card-front"></ng-content>
+            <div class="arrow-icon mr-2" (click)="toggle()">
+                <fa-icon [icon]="faArrowAltCircleRight" size="2x"> </fa-icon>
+            </div>
+            <div class="d-flex align-items-end">
+                <div class="social-media ml-2">
+                    <a href="https://www.youtube.com/watch?v=h28ifrILG7Q&t=490s&ab_channel=dulcebick" target="_blank">
+                        <img src="../../../assets/pictures/youtubewhite.png" class="iconimage" width="30em">
+                    </a>&nbsp;
+                    <a href="https://github.com/DulceBick/Spend2" target="_blank">
+                        <img src="../../../assets/pictures/silueta-del-logo-de-github-en-un-cuadradowhite.png" class="iconimage" width="30em">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="back">
+            <ng-content select="flip-card-back"></ng-content>
+            <div class="arrow-icon mr-2" (click)="toggle()">
+                <fa-icon [icon]="faArrowCircleLeft" size="2x"> </fa-icon>
+            </div>
+
+        </div>
+    </div>
+</div>

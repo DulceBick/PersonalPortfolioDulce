@@ -7,10 +7,11 @@ import { HeaderPageComponent } from './header-page/header-page.component';
 import { FontAwesomeModule }  from '@fortawesome/angular-fontawesome';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
-import { WeatherApiComponent } from './weather-api/weather-api.component';
 import { ParticlesModule } from 'angular-particle';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
+import { FlipCardModule } from './shared/flip-card/flip-card.module'
+
 
 @NgModule({
   declarations: [
@@ -18,7 +19,6 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
     HeaderPageComponent,
     HomePageComponent,
     FooterPageComponent,
-    WeatherApiComponent,
     AboutMeComponent,
     MyProjectsComponent
   ],
@@ -26,7 +26,8 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    ParticlesModule
+    ParticlesModule,
+    FlipCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
